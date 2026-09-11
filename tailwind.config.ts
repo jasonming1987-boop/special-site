@@ -17,10 +17,13 @@ const config: Config = {
           blush: "#fbd9e6",
           blush2: "#f4e8cf",
         },
+        // Same brand family as Site A, in a moodier register: black + gold.
         "site-b": {
           bg: "#0b0b0c",
+          surface: "#161616",
           fg: "#f2f2f2",
-          accent: "#e5484d",
+          muted: "#a8a29c",
+          accent: "#cda355",
         },
       },
       fontFamily: {

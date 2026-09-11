@@ -58,7 +58,7 @@ export function SignupForm({
           className={
             theme === "site-a"
               ? "flex-1 rounded-full border border-site-a-gold/35 bg-white px-5 py-3 text-sm text-site-a-fg outline-none transition focus:border-site-a-accent"
-              : "flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm text-site-b-fg outline-none focus:border-site-b-accent"
+              : "flex-1 rounded-full border border-site-b-accent/30 bg-white/5 px-5 py-3 text-sm text-site-b-fg outline-none transition focus:border-site-b-accent"
           }
         />
         <button
@@ -66,14 +66,14 @@ export function SignupForm({
           disabled={status === "loading"}
           className={
             theme === "site-a"
-              ? "rounded-full bg-site-a-accent px-6 py-3 text-sm font-medium tracking-wide text-white transition hover:opacity-90 disabled:opacity-50"
-              : "rounded-lg bg-site-b-accent px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
+              ? "whitespace-nowrap rounded-full bg-site-a-accent px-6 py-3 text-sm font-medium tracking-wide text-white transition hover:opacity-90 disabled:opacity-50"
+              : "whitespace-nowrap rounded-full bg-site-b-accent px-6 py-3 text-sm font-medium tracking-wide text-site-b-bg transition hover:opacity-90 disabled:opacity-50"
           }
         >
           {status === "loading" ? "..." : copy.button}
         </button>
       </div>
-      <p className={theme === "site-a" ? "text-xs text-site-a-muted" : "text-xs text-white/40"}>
+      <p className={theme === "site-a" ? "text-xs text-site-a-muted" : "text-xs text-site-b-muted"}>
         {copy.consent}
       </p>
       {status === "error" && (
