@@ -6,15 +6,16 @@ const config: Config = {
     extend: {
       colors: {
         // Placeholder brand tokens. Real values come with the actual brand name (Section 6).
-        // Warm, editorial beauty-brand palette for Site A: cream + blush + rose gold.
+        // "Hamptons rich-girl Barbie": ivory + Barbie pink + gold trim.
         "site-a": {
-          bg: "#fdf6f2",
+          bg: "#fffaf6",
           surface: "#ffffff",
-          fg: "#3a2b28",
-          muted: "#8c766f",
-          accent: "#c17a54",
-          blush: "#f4dcd2",
-          blush2: "#efe3da",
+          fg: "#2b1f1c",
+          muted: "#8a7267",
+          accent: "#e8709c",
+          gold: "#b8863c",
+          blush: "#fbd9e6",
+          blush2: "#f4e8cf",
         },
         "site-b": {
           bg: "#0b0b0c",

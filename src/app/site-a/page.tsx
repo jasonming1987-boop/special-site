@@ -32,7 +32,7 @@ export default async function SiteAPage() {
           <img
             src="/beauty/avatar.svg"
             alt=""
-            className="h-24 w-24 rounded-full object-cover shadow-[0_8px_24px_-8px_rgba(58,43,40,0.35)]"
+            className="h-24 w-24 rounded-full object-cover ring-2 ring-site-a-gold/50 ring-offset-4 ring-offset-site-a-bg shadow-[0_8px_24px_-8px_rgba(232,112,156,0.45)]"
           />
           <div>
             <h1 className="font-display text-3xl text-site-a-fg">[Brand Name]</h1>
@@ -48,7 +48,7 @@ export default async function SiteAPage() {
                 href={s.url}
                 target="_blank"
                 rel="noopener"
-                className="rounded-full border border-site-a-blush2 bg-white/70 px-4 py-1.5 text-site-a-fg transition hover:border-site-a-accent hover:text-site-a-accent"
+                className="rounded-full border border-site-a-gold/35 bg-white/70 px-4 py-1.5 text-site-a-fg transition hover:border-site-a-accent hover:text-site-a-accent"
               >
                 {s.label}
               </a>
@@ -56,7 +56,7 @@ export default async function SiteAPage() {
           </div>
         </header>
 
-        <section className="flex flex-col items-center gap-3 rounded-3xl bg-site-a-blush/50 px-6 py-8 text-center">
+        <section className="flex flex-col items-center gap-3 rounded-3xl border border-site-a-gold/20 bg-site-a-blush/50 px-6 py-8 text-center">
           <h2 className="font-display text-xl text-site-a-fg">Get new drops first</h2>
           <p className="max-w-xs text-sm text-site-a-muted">
             Join the list for early access to restocks and new picks.
@@ -78,7 +78,7 @@ export default async function SiteAPage() {
               <h2 className="whitespace-nowrap font-display text-xl text-site-a-fg">
                 Shop the Merch
               </h2>
-              <div className="h-px flex-1 bg-site-a-blush2" />
+              <div className="h-px flex-1 bg-gradient-to-r from-site-a-gold/60 to-transparent" />
             </div>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
               {merchPicks.map((pick) => (
@@ -95,7 +95,7 @@ export default async function SiteAPage() {
                 <h2 className="whitespace-nowrap font-display text-xl text-site-a-fg">
                   My Picks
                 </h2>
-                <div className="h-px flex-1 bg-site-a-blush2" />
+                <div className="h-px flex-1 bg-gradient-to-r from-site-a-gold/60 to-transparent" />
               </div>
               <p className="mt-2 text-xs text-site-a-muted">
                 Products I actually use and recommend. These are affiliate links — I may

@@ -15,7 +15,7 @@ export function PickCard({ pick }: { pick: Pick }) {
       href={href}
       target="_blank"
       rel="noopener sponsored"
-      className="group flex flex-col overflow-hidden rounded-3xl border border-site-a-blush2 bg-site-a-surface shadow-[0_1px_2px_rgba(58,43,40,0.04)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_32px_-12px_rgba(58,43,40,0.18)]"
+      className="group flex flex-col overflow-hidden rounded-3xl border border-site-a-gold/25 bg-site-a-surface shadow-[0_1px_2px_rgba(43,31,28,0.05)] transition duration-300 hover:-translate-y-0.5 hover:border-site-a-gold/50 hover:shadow-[0_18px_36px_-14px_rgba(232,112,156,0.35)]"
     >
       <div className="aspect-square w-full overflow-hidden bg-site-a-blush2">
         {/* eslint-disable-next-line @next/next/no-img-element */}

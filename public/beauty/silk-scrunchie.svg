@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
   <defs>
     <linearGradient id="bgGrad4" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f4e9ee"/>
-      <stop offset="100%" stop-color="#e9d5de"/>
+      <stop offset="0%" stop-color="#fff8fb"/>
+      <stop offset="100%" stop-color="#f9d3e2"/>
     </linearGradient>
   </defs>
   <rect width="400" height="400" fill="url(#bgGrad4)"/>
-  <!-- silk scrunchie, drawn as two overlapping soft rings -->
-  <g fill="none" stroke="#8c5a3c" stroke-width="3">
-    <circle cx="200" cy="210" r="80" fill="#e9c3d1" stroke="#8c5a3c"/>
-    <circle cx="200" cy="210" r="46" fill="url(#bgGrad4)" stroke="#8c5a3c"/>
-    <path d="M130 160 Q160 140 190 160" stroke="#fff" stroke-width="2" opacity="0.7"/>
-    <path d="M230 260 Q260 280 270 250" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <!-- silk scrunchie in Barbie pink with a gold ring accent -->
+  <g fill="none" stroke="#b8863c" stroke-width="3">
+    <circle cx="200" cy="210" r="80" fill="#f2a9c4" stroke="#b8863c"/>
+    <circle cx="200" cy="210" r="46" fill="url(#bgGrad4)" stroke="#b8863c"/>
+    <circle cx="200" cy="210" r="60" fill="none" stroke="#cda355" stroke-width="1.5" opacity="0.7"/>
+    <path d="M130 160 Q160 140 190 160" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <path d="M230 260 Q260 280 270 250" stroke="#fff" stroke-width="2" opacity="0.8"/>
   </g>
-  <text x="200" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#8c5a3c" opacity="0.7">Silk Scrunchie Set</text>
+  <path d="M300 320 L302 326 L308 328 L302 330 L300 336 L298 330 L292 328 L298 326 Z" fill="#b8863c" opacity="0.8"/>
+  <text x="200" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#8a7267">Silk Scrunchie Set</text>
 </svg>

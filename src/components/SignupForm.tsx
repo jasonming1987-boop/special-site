@@ -57,7 +57,7 @@ export function SignupForm({
           placeholder={copy.placeholder}
           className={
             theme === "site-a"
-              ? "flex-1 rounded-full border border-site-a-blush2 bg-white px-5 py-3 text-sm text-site-a-fg outline-none transition focus:border-site-a-accent"
+              ? "flex-1 rounded-full border border-site-a-gold/35 bg-white px-5 py-3 text-sm text-site-a-fg outline-none transition focus:border-site-a-accent"
               : "flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm text-site-b-fg outline-none focus:border-site-b-accent"
           }
         />

@@ -7,14 +7,11 @@ export default function DemoIndex() {
         <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
           A first look
         </p>
-        <h1 className="mt-2 text-2xl font-bold text-neutral-900">
-          Here's what we built you
-        </h1>
         <p className="mt-3 text-sm leading-relaxed text-neutral-600">
           You get two links instead of one. Tap into each one below and click around —
           it already works, so this is a real feel for what you'll be sending people. The
           name and products you see are just placeholders for now, so don't worry about
-          those yet — we'll make it official once we've picked your brand name together.
+          those yet.
         </p>
       </div>
 
@@ -28,9 +25,8 @@ export default function DemoIndex() {
           </p>
           <h2 className="mt-1 text-lg font-semibold text-site-a-fg">Your safe link</h2>
           <p className="mt-2 text-sm text-neutral-600">
-            Put this one in your Instagram and TikTok bios. It's totally clean, so it
-            can never get those accounts in trouble. It's got your merch, your
-            favorite picks, and all your socials in one place.
+            The one link to share everywhere. It hosts your merch, your affiliates, and
+            captures email subscriptions for the good stuff.
           </p>
         </Link>
 
