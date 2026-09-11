@@ -4,13 +4,19 @@ import type { DataAdapter } from "@/lib/data/adapter";
 // --- Seed data -------------------------------------------------------------
 // Placeholder products/networks/copy only. No real brand, no real affiliate
 // links. Replace wholesale once real picks and merch exist.
+//
+// Images are stock photography (Unsplash/Pexels, free-to-use licenses, no
+// attribution required) standing in for real product photography — chosen
+// to be objects/textures only, nothing depicting an identifiable person,
+// since no real brand photos of the client exist yet.
 
 const picks: Pick[] = [
   {
     id: "1",
     slug: "vitamin-c-serum",
     title: "Vitamin C Serum",
-    image: "/beauty/serum.svg",
+    image:
+      "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&w=800&q=80",
     blurb: "The serum I actually use every morning, not just for the photo.",
     kind: "affiliate",
     destinationUrl: "https://example.com/vitamin-c-serum",
@@ -24,7 +30,8 @@ const picks: Pick[] = [
     id: "2",
     slug: "brush-set",
     title: "Everyday Brush Set",
-    image: "/beauty/brush-set.svg",
+    image:
+      "https://images.pexels.com/photos/7512743/pexels-photo-7512743.jpeg?auto=compress&cs=tinysrgb&w=800",
     blurb: "The three brushes that live in my bag, linked in one place.",
     kind: "affiliate",
     destinationUrl: "https://example.com/brush-set",
@@ -37,7 +44,8 @@ const picks: Pick[] = [
     id: "3",
     slug: "signature-lip-gloss",
     title: "Signature Lip Gloss",
-    image: "/beauty/lip-gloss.svg",
+    image:
+      "https://images.pexels.com/photos/28968483/pexels-photo-28968483/free-photo-of-elegant-lipstick-collection-on-marble-surface.jpeg?auto=compress&cs=tinysrgb&w=800",
     blurb: "Print-on-demand, ships direct, no inventory sitting in a closet.",
     kind: "merch",
     destinationUrl: "https://example.com/store/signature-lip-gloss",
@@ -50,7 +58,8 @@ const picks: Pick[] = [
     id: "4",
     slug: "silk-scrunchie-set",
     title: "Silk Scrunchie Set",
-    image: "/beauty/silk-scrunchie.svg",
+    image:
+      "https://images.pexels.com/photos/6044139/pexels-photo-6044139.jpeg?auto=compress&cs=tinysrgb&w=800",
     blurb: "Small batch, restocks monthly.",
     kind: "merch",
     destinationUrl: "https://example.com/store/silk-scrunchie-set",

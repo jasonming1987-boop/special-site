@@ -26,22 +26,30 @@ export default async function SiteAPage() {
         className="pointer-events-none absolute top-64 -left-28 h-64 w-64 rounded-full bg-site-a-blush2 opacity-70 blur-3xl"
       />
 
-      <main className="relative mx-auto flex max-w-md flex-col gap-12 px-5 pb-20 pt-14 sm:max-w-2xl">
+      <main className="relative mx-auto flex max-w-md flex-col gap-12 pb-20 sm:max-w-2xl">
         <header className="flex flex-col items-center gap-4 text-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/beauty/avatar.svg"
-            alt=""
-            className="h-24 w-24 rounded-full object-cover ring-2 ring-site-a-gold/50 ring-offset-4 ring-offset-site-a-bg shadow-[0_8px_24px_-8px_rgba(232,112,156,0.45)]"
-          />
-          <div>
+          <div className="relative w-full px-5 pt-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://images.pexels.com/photos/3630339/pexels-photo-3630339.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt=""
+              className="h-40 w-full rounded-3xl object-cover shadow-[0_12px_32px_-12px_rgba(43,31,28,0.35)] sm:h-56"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://images.pexels.com/photos/5052701/pexels-photo-5052701.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt=""
+              className="absolute -bottom-12 left-1/2 h-24 w-24 -translate-x-1/2 rounded-full border-4 border-site-a-bg object-cover shadow-[0_8px_24px_-8px_rgba(232,112,156,0.45)]"
+            />
+          </div>
+          <div className="mt-12 px-5">
             <h1 className="font-display text-3xl text-site-a-fg">Margarita Smith</h1>
             <p className="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-site-a-muted">
               Skincare &amp; makeup favorites, curated for you. New drops announced by
               email first.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-2 text-sm">
+          <div className="flex flex-wrap justify-center gap-2 px-5 text-sm">
             {SOCIALS.map((s) => (
               <a
                 key={s.label}
@@ -56,7 +64,7 @@ export default async function SiteAPage() {
           </div>
         </header>
 
-        <section className="flex flex-col items-center gap-3 rounded-3xl border border-site-a-gold/20 bg-site-a-blush/50 px-6 py-8 text-center">
+        <section className="mx-5 flex flex-col items-center gap-3 rounded-3xl border border-site-a-gold/20 bg-site-a-blush/50 px-6 py-8 text-center">
           <h2 className="font-display text-xl text-site-a-fg">Get new drops first</h2>
           <p className="max-w-xs text-sm text-site-a-muted">
             Join the list for early access to restocks and new picks.
@@ -73,7 +81,7 @@ export default async function SiteAPage() {
         </section>
 
         {merchPicks.length > 0 && (
-          <section className="flex flex-col gap-5">
+          <section className="mx-5 flex flex-col gap-5">
             <div className="flex items-center gap-4">
               <h2 className="whitespace-nowrap font-display text-xl text-site-a-fg">
                 Shop the Merch
@@ -89,7 +97,7 @@ export default async function SiteAPage() {
         )}
 
         {affiliatePicks.length > 0 && (
-          <section className="flex flex-col gap-5">
+          <section className="mx-5 flex flex-col gap-5">
             <div>
               <div className="flex items-center gap-4">
                 <h2 className="whitespace-nowrap font-display text-xl text-site-a-fg">
@@ -110,7 +118,7 @@ export default async function SiteAPage() {
           </section>
         )}
 
-        <footer className="pt-4 text-center text-xs text-site-a-muted">
+        <footer className="mx-5 pt-4 text-center text-xs text-site-a-muted">
           © Margarita Smith. Some links above are affiliate links.
         </footer>
       </main>
