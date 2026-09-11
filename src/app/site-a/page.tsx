@@ -35,7 +35,7 @@ export default async function SiteAPage() {
             className="h-24 w-24 rounded-full object-cover ring-2 ring-site-a-gold/50 ring-offset-4 ring-offset-site-a-bg shadow-[0_8px_24px_-8px_rgba(232,112,156,0.45)]"
           />
           <div>
-            <h1 className="font-display text-3xl text-site-a-fg">[Brand Name]</h1>
+            <h1 className="font-display text-3xl text-site-a-fg">Margarita Smith</h1>
             <p className="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-site-a-muted">
               Skincare &amp; makeup favorites, curated for you. New drops announced by
               email first.
@@ -111,7 +111,7 @@ export default async function SiteAPage() {
         )}
 
         <footer className="pt-4 text-center text-xs text-site-a-muted">
-          © [Brand Name]. Some links above are affiliate links.
+          © Margarita Smith. Some links above are affiliate links.
         </footer>
       </main>
     </div>

@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 // explicitly as part of "clean in more than imagery". Keep the copy boring
 // on purpose: no "exclusive", "spicy", "VIP", "unlock".
 export const metadata: Metadata = {
-  title: "Shop & Links — [Brand Name]",
-  description: "Merch, favorite picks, and where to find [Brand Name] online.",
+  title: "Shop & Links — Margarita Smith",
+  description: "Merch, favorite picks, and where to find Margarita Smith online.",
 };
 
 export default function SiteALayout({ children }: { children: React.ReactNode }) {

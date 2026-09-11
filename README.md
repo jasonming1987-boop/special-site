@@ -12,7 +12,8 @@ exist. See `creatorstorefrontbrief.md` for the full project brief this implement
 | Database | In-memory arrays (`src/lib/data/mock-store.ts`) | Supabase, behind the same `DataAdapter` interface — swap one file |
 | Email sending | Logged to the server console, never sent | Resend (clean stream) + SendX/YNOT (links stream), behind an adapter |
 | Click tracking (`/go/[slug]`) | Real — logs to the in-memory store, actually redirects | Same logic, writes to `click_events` table instead |
-| Brand name / domain | Placeholder `[Brand Name]` / `[Persona Handle]` | Pending client decision (open item, brief Section 6) |
+| Brand name (Site A) | Margarita Smith | Decided |
+| Domain name / persona handle (Site B) | Placeholder `[Persona Handle]` | Still pending — deliberately kept separate from the Site A brand name per the brief's Section 2 |
 | Affiliate/merch links | Placeholder URLs | Real destinations once affiliate programs are approved and Fourthwall (or fallback) is set up |
 
 ## Running it
