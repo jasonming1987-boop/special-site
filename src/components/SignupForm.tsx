@@ -57,7 +57,7 @@ export function SignupForm({
           placeholder={copy.placeholder}
           className={
             theme === "site-a"
-              ? "flex-1 rounded-lg border border-black/10 bg-white px-4 py-2 text-sm text-site-a-fg outline-none focus:border-site-a-accent"
+              ? "flex-1 rounded-full border border-site-a-blush2 bg-white px-5 py-3 text-sm text-site-a-fg outline-none transition focus:border-site-a-accent"
               : "flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm text-site-b-fg outline-none focus:border-site-b-accent"
           }
         />
@@ -66,14 +66,14 @@ export function SignupForm({
           disabled={status === "loading"}
           className={
             theme === "site-a"
-              ? "rounded-lg bg-site-a-accent px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
+              ? "rounded-full bg-site-a-accent px-6 py-3 text-sm font-medium tracking-wide text-white transition hover:opacity-90 disabled:opacity-50"
               : "rounded-lg bg-site-b-accent px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
           }
         >
           {status === "loading" ? "..." : copy.button}
         </button>
       </div>
-      <p className={theme === "site-a" ? "text-xs text-neutral-400" : "text-xs text-white/40"}>
+      <p className={theme === "site-a" ? "text-xs text-site-a-muted" : "text-xs text-white/40"}>
         {copy.consent}
       </p>
       {status === "error" && (

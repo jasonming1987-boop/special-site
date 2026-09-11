@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="avatarGrad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fbeee6"/>
+      <stop offset="100%" stop-color="#e3b79a"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#avatarGrad)"/>
+  <g fill="none" stroke="#8c5a3c" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <circle cx="100" cy="100" r="10" fill="#fff8f3" stroke="#8c5a3c"/>
+    <path d="M100 90 C90 70 70 70 65 85 C62 95 75 100 100 90Z" fill="#f4dcd2"/>
+    <path d="M100 90 C110 70 130 70 135 85 C138 95 125 100 100 90Z" fill="#f4dcd2"/>
+    <path d="M100 90 C85 95 80 112 92 122 C100 128 105 112 100 90Z" fill="#f4dcd2"/>
+    <path d="M100 90 C115 95 120 112 108 122 C100 128 95 112 100 90Z" fill="#f4dcd2"/>
+  </g>
+</svg>
