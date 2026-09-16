@@ -21,6 +21,19 @@ export interface Pick {
    * render `destinationUrl` directly instead of routing through /go/[slug].
    */
   useRedirect: boolean;
+  /**
+   * Print mockup: renders text over a blank apparel photo the way a
+   * print-on-demand mockup tool would, so a stock photo of a plain garment
+   * can stand in for a specific printed design. Position is a CSS
+   * top/left percentage tuned per photo.
+   */
+  printOverlay?: {
+    text: string;
+    top: string;
+    left: string;
+    rotate?: string;
+    widthClass?: string;
+  };
 }
 
 export interface ClickEvent {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Caveat } from "next/font/google";
 import "./globals.css";
 
 // Editorial serif for headlines + a clean sans for body text — the pairing
@@ -16,6 +16,15 @@ const body = Inter({
   display: "swap",
 });
 
+// Playful handwritten font for merch print mockups ("Girl Gang" designs
+// overlaid on blank apparel photos) — not used for real UI copy.
+const script = Caveat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-script",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Your new site — a first look",
   description: "Take a look and click around — this is what we're building you.",
@@ -27,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${script.variable}`}>
       <body className="font-body">{children}</body>
     </html>
   );
